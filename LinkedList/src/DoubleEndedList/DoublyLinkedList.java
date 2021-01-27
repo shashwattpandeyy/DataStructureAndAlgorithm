@@ -8,9 +8,11 @@ public class DoublyLinkedList {
         Head = null;
         Tail = null;
     }
+    // This function checks whether the doublyLinkedList is empty or not
     public boolean isEmpty(){
         return Head == null;
     }
+    // It inserts the data in 1st position.
     public void InsertFirst(int data){
         Node node = new Node(data);
         if(isEmpty ()){
@@ -21,6 +23,7 @@ public class DoublyLinkedList {
         node.next = Head;
         Head = node;
     }
+    // It inserts the data in last position.
     public void InsertLast(int data){
         Node node = new Node(data);
         if(isEmpty ()){
@@ -31,6 +34,7 @@ public class DoublyLinkedList {
         }
         Tail = node;
     }
+    // this function means to add data in any specified index.
     public void InsertAfter(int index, int data){
         Node node = new Node(data);
         if(index ==0){
@@ -47,6 +51,7 @@ public class DoublyLinkedList {
             Tail = node;
         }
     }
+    // it deletes the 1st data
     public Node DeleteFirst(){
         Node temp = Head;
         if (Head.next == null)
@@ -65,6 +70,7 @@ public class DoublyLinkedList {
         Tail = Tail.prev;
         return temp;
     }
+    // it delete the specified data
     public Node  deleteKey(int data){
         Node n = Head;
         while (n.data != data){
