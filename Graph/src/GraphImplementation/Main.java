@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /*
-    This is the implementation of GraphImplementation.Graph using hashmap
+    This is the implementation of GraphImplementation. Graph using hashmap
     basically graph can be implemented by graph as a map ans graph as a list.
     Also this is Generic graph you can implement integer as well as string whatever you want
  */
@@ -13,7 +13,7 @@ class Graph<E>{
     private HashMap<E , List<E>> hashMap = new HashMap<> ();
 
     /* here addvertices takes a vertex means source or destination and treated as a key so
-        hashmap works as a key ans value.
+        hashmap works as a key and value.
        vertex is key and all the values will be stored in linkedlist.
 
      */
